@@ -1,0 +1,93 @@
+/* design animation  */
+
+.animation-aboutme {
+    color: #bf0741d2;
+    font-family: "Fira+Sans+Condensed";
+    font-size: 4.3rem;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.animation-aboutme {
+    /* padding: 64px; */
+    background: linear-gradient(to right, #bf0741d2 0, #4E4E50 10%, #4E4E50 20%, #bf0741d2 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+}
+
+.last-underline {
+    text-decoration: underline;
+    text-decoration-color: #4E4E50;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 5%;
+}
+
+/* .about-me-text {
+    font-family: "Fira+Sans+Condensed";
+    font-size: 4.3rem;
+    text-decoration: underline;
+    letter-spacing: 2px;
+    text-align: center;
+    color: white;
+} */
+.about-box {
+    background: #1c1c1c;
+    width: 80%;
+    box-shadow: 0px 0px 30px 0px #4E4E50;
+    height: auto;
+    margin-inline: auto;
+}
+
+.aboutme-inside {
+    width: 70%;
+    margin-inline: auto;
+    margin-top: 130px;
+}
+
+.some-text-about-me {
+    /* font-family: "Dosis"; */
+    /* font-weight: 600; */
+    font-size: 1.1rem;
+    opacity: 0.8;
+    text-align: justify;
+    color: white;
+    padding-right: 15px;
+}
+
+.few-highlights {
+    /* font-family: "Ubuntu"; */
+    padding-block: 20px;
+    color: white;
+}
+
+.few-text {
+    /* font-family: "Ubuntu"; */
+    /* font-weight: 600; */
+    font-size: 1.5rem;
+    /* opacity: 0.8; */
+    /* margin-top: 40px; */
+    text-align: justify;
+}
+
+.few-list {
+    /* font-family: "Ubuntu"; */
+    font-size: 1.2rem;
+}
+
+
+@media (max-width: 786px) {
+    .aboutme-inside {
+        width: 80%;
+    }
+
+    .some-text-about-me {
+        padding-right: 0px;
+    }
+
+    .about-box {
+        padding: 0px 0px 40px;
+        width: 100%;
+    }
+
+}
