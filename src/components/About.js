@@ -8,8 +8,8 @@ import Footer from './Footer';
 export default function About() {
     return (
         <>
+            <Header />
             <div className='about-me-section aboutme-inside'>
-                <Header />
                 <div className='d-flex flex-column'>
                     <span className='animation-aboutme'>About Me</span>
 

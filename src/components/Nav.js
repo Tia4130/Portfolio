@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from "react-router-dom"
 import '../css/Nav.css';
 
 export default function Nav() {
@@ -13,10 +14,10 @@ export default function Nav() {
                 <span className='brand-name'></span>
 
                 <div className='d-flex flex-rows'>
-                    <span className='mx-4 nav-items'>Home</span>
-                    <span className='mx-4 nav-items'>About me</span>
-                    <span className='mx-4 nav-items'>Resume</span>
-                    <span className='mx-4 nav-items'>Contact me</span>
+                    <Link to='/'><span className='mx-4 nav-items'>Home</span></Link>
+                    <Link to='/about'><span className='mx-4 nav-items'>About me</span></Link>
+                    <Link to='/contact-me'> <span className='mx-4 nav-items'>Contact Me</span></Link>
+                    <Link to='/projects'> <span className='mx-4 nav-items'>Projects</span></Link>
                 </div>
             </nav>
         </>
