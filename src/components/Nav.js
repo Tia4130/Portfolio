@@ -1,9 +1,5 @@
 import React, { useState } from 'react'
-<<<<<<< HEAD
-import { Link } from "react-router-dom";
-=======
 import { Link } from "react-router-dom"
->>>>>>> a54de2f0befb7d948c0ef5ef14619a6cd9f24b73
 import '../css/Nav.css';
 
 export default function Nav() {
