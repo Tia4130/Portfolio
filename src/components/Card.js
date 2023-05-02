@@ -3,16 +3,22 @@ import '../css/Projects.css';
 
 function Card({ title, description }) {
     return (
-        <div className='card'>
-            <div className='face face1'>
+        <div className='crd'>
+            <div className='container123'>
+                <div className='text-in-middle'>
+                    <h2>{title}</h2>
+                    <div>{description}</div>
+                </div>
+
+            </div>
+            {/* <div className='face face1'>
                 <div className='content'>
-                    <span className='stars'></span>
                     <div className='Airbnb'>
                         <h2>{title}</h2>
                         <div>{description}</div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

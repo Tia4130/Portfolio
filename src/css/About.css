@@ -77,6 +77,10 @@
 
 
 @media (max-width: 786px) {
+    .animation-aboutme {
+        font-size: 3rem;
+    }
+
     .aboutme-inside {
         width: 80%;
     }
