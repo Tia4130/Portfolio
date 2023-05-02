@@ -28,22 +28,23 @@ export default function Header() {
 
     }, []);
     return (
-        <div className="menu">
+        <>
             {/* website nav:  */}
             <Nav />
+            <div className="menu">
 
-            {/* mobile nav: */}
-            <div className='mobile-shouldnotshow'>
-                <div className=' d-flex flex-column'>
-                    <span className='mx-4 home-tab'><Link to="/">Home</Link></span>
-                    <span className='mx-4 home-tab'><Link to="/about">About</Link></span>
-                    <span className='mx-4 home-tab'><Link to="/projects">Projects</Link></span>
-                    <span className='mx-4 home-tab'><Link to="/contact-me"> Contact</Link></span>
-                    <div>test1</div>
+                {/* mobile nav: */}
+                <div className='mobile-shouldnotshow'>
+                    <div className=' d-flex flex-column'>
+                        <span className='mx-4 home-tab'><Link to="/">Home</Link></span>
+                        <span className='mx-4 home-tab'><Link to="/about">About</Link></span>
+                        <span className='mx-4 home-tab'><Link to="/projects">Projects</Link></span>
+                        <span className='mx-4 home-tab'><Link to="/contact-me"> Contact</Link></span>
 
-                    <img id="toggle-btn" className='home-img-logo' src={logoUser} alt="logo" />
+                        <img id="toggle-btn" className='home-img-logo' src={logoUser} alt="logo" />
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }

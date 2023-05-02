@@ -17,7 +17,7 @@ export default function Footer() {
                         <i className="fab fa-linkedin-in" aria-hidden="true"></i>
                     </div>
                 </a>
-                <a href="#" target="blank" className="social-margin">
+                <a href="https://github.com/Tia4130" target="blank" className="social-margin">
                     <div className="social-icon github">
                         <i className="fab fa-github" aria-hidden="true"></i>
                     </div>
