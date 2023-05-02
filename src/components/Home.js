@@ -4,10 +4,6 @@ import '../css/Home.css';
 //components
 import Footer from './Footer';
 import Header from './Header';
-import HeaderWebsite from './HeaderWebsite';
-
-//image
-import mepor2 from '../image/mepor2.jpeg';
 
 export default function Home() {
 

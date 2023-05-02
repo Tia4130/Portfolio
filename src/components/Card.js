@@ -11,14 +11,6 @@ function Card({ title, description }) {
                 </div>
 
             </div>
-            {/* <div className='face face1'>
-                <div className='content'>
-                    <div className='Airbnb'>
-                        <h2>{title}</h2>
-                        <div>{description}</div>
-                    </div>
-                </div>
-            </div> */}
         </div>
     )
 }

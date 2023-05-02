@@ -59,24 +59,8 @@ export default function Contactme() {
 
 
                                 <div className='input-group1 d-flex flex-column'>
-
-                                    {/* design of the animation input  */}
-                                    {/* <div className='inputBox'>
-                                        <input className="inputBoxInput" type="text" required />
-                                        <span className='inputBoxSpan'>First Name</span>
-
-                                    </div>
-                                    <div className='inputBox'>
-                                        <div className='inputBox'>
-                                            <input className="inputBoxInput" type="text" required />
-                                            <span className='inputBoxSpan'>Last Name</span>
-
-                                        </div>
-                                    </div> */}
-                                    {/* the end of the design animation input  */}
-
-                                    {/* <label>Name</label> */}
                                     <input
+                                        required
                                         name="from_name"
                                         value={name}
                                         onChange={(e) => {
@@ -91,6 +75,7 @@ export default function Contactme() {
 
                                     {/* <label>Email</label> */}
                                     <input
+                                        required
                                         name="user_email"
                                         value={email}
                                         onChange={(e) => {
@@ -105,6 +90,7 @@ export default function Contactme() {
 
                                     {/* <label>Message</label> */}
                                     <textarea
+                                        required
                                         name="message"
                                         value={message}
                                         onChange={(e) => {

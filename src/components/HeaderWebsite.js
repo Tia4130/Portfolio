@@ -1,6 +1,4 @@
 import React from 'react'
-
-//react
 import { Link } from 'react-router-dom';
 
 function HeaderWebsite() {
