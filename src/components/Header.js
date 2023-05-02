@@ -40,7 +40,7 @@ export default function Header() {
                         <span className='mx-4 home-tab'><Link to="/about">About</Link></span>
                         <span className='mx-4 home-tab'><Link to="/projects">Projects</Link></span>
                         <span className='mx-4 home-tab'><Link to="/contact-me"> Contact</Link></span>
-
+                        <div>testing the git</div>
                         <img id="toggle-btn" className='home-img-logo' src={logoUser} alt="logo" />
                     </div>
                 </div>
