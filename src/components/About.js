@@ -23,23 +23,18 @@ export default function About() {
                         {/* rightside */}
                         <di0v className='col-lg-6 col-md-6 col-sm-12 py-5 d-flex flex-column'>
                             <span className='some-text-about-me'>
-                                Software engineer blandjndj jend dnejdnjdndjndn nb hfbv  fjvfd dfv
-                                bvnjvnjkjknv bjv dfvjfjbb vj nndfvdfb  f vb  vnf vndf n bnf nf f
-                                gbnffd engineer blandjndj jend dnejdnjdndjndn nb hfbv  fjvfd dfv
-                                dfjvdfnvdjhfvdfnv dhjvdv dfbjndnbvnjvnjkjknv bjv dfvjfjbb vj nndfvd
-                                fb  f vb  vnf vndf n bnf nf fgbnffd engineer blandjndj jend dnej w heke
+                                I am a recent computer science graduate, I bring extensive experience working with technologies such as JavaScript, React, and Django. I graduated in August 2022 and gained this experience both through my academic projects and through my work experience prior to graduation. I am excited to embark on a career in the tech industry and contribute my skills and expertise to innovative projects. I am confident in my ability to develop effective solutions using these technologies and am eager to continue building on this foundation as I pursue my career goals.
                             </span>
-
                             <span className='few-highlights'>
                                 <span className='few-text'>
                                     Here are few highlights
                                 </span>
                                 <span className='few-list'>
                                     <ul>
-                                        <li>frontend blabla</li>
-                                        <li>React and Redux</li>
-                                        <li>Django</li>
                                         <li>JavaScript, css, and html</li>
+                                        <li>React.js and Redux</li>
+                                        <li>Django</li>
+                                        {/* <li></li> */}
                                     </ul>
                                 </span>
                             </span>

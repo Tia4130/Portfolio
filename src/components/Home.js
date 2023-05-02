@@ -13,13 +13,13 @@ export default function Home() {
 
     const onButtonClick = () => {
         // javascript method
-        fetch('TiaAkikiCv.pdf').then(response => {
+        fetch('CVTia.Akiki.pdf').then(response => {
             response.blob().then(blob => {
                 const fileURL = window.URL.createObjectURL(blob);
 
                 let alink = document.createElement('a');
                 alink.href = fileURL;
-                alink.download = 'TiaAkikiCv.pdf';
+                alink.download = 'CVTia.Akiki.pdf';
                 alink.click();
             })
         })
@@ -43,7 +43,7 @@ export default function Home() {
                         <p className='iam-text'>I am</p>
 
                         <p className='name-text'>Tia Akiki</p>
-                        <p className='major-text'>Software Engineer</p>
+                        <p className='major-text'>Computer Science</p>
                         <button className="glow-on-hover rounded mx-auto d-block" type="button"
                             onClick={onButtonClick}
                         >Get Resume</button>
