@@ -1,17 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
-
-/* section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-} */
-.container-footer {
-    /* position: fixed; */
-}
-
 .waterContainer {
     width: 100%;
     background-color: #ffffff;
@@ -33,7 +21,6 @@
     left: -50%;
     border-radius: 40%;
     animation: wave 12s infinite linear;
-    /* animation-delay: 0.5s; */
 }
 
 .waterContainer::after {
@@ -71,7 +58,6 @@
     margin: 20px 10px;
 }
 
-/* Helper class to divide the icons */
 .social-margin {
     margin-right: 15px;
 }
@@ -97,16 +83,12 @@ a:active {
     line-height: 1px;
     padding-top: 11px;
     transition: all 0.5s;
-    /* animation: wave 12s infinite linear; */
 }
-
-
 
 .social-icon:hover {
     transform: rotate(360deg)scale(1.3);
 }
 
-/* Facebook Button Styling */
 .github {
     font-size: 22px;
     padding-top: 9px;
@@ -121,8 +103,6 @@ a:active {
     color: #000000;
 }
 
-
-/* Linkedin Button Styling */
 .linkedin {
     font-size: 24px;
     padding-top: 8px;
@@ -130,7 +110,6 @@ a:active {
     background-color: #0976b4;
     color: #ffffff;
     border-color: #0976b4;
-
 }
 
 .linkedin :hover {

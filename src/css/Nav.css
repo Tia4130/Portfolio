@@ -22,8 +22,6 @@
     justify-content: space-between;
 }
 
-/* header */
-
 .herosection-2 {
     padding-top: 0px;
 }
@@ -36,7 +34,6 @@
 .Im-text {
     font-family: "Ubuntu";
     color: #1c1c1c;
-    /* font-weight: 700; */
     font-size: 1.4rem;
 }
 
@@ -67,13 +64,11 @@
     border: 2px solid #E85A4F;
     transition: all 0.3s ease-in-out;
     padding: 5px 40px;
-    /* animation: Anim 2s ease-in-out infinite; */
 }
 
 .btn-resume-me:hover {
     transform: translateY(-5px);
     background-color: #E85A4F;
-    /* color: #1c1c1c; */
     color: #EAE7DC;
 }
 
@@ -83,7 +78,6 @@
     display: flex;
     justify-content: center;
     padding-bottom: 15px;
-    /* padding se3adtne la zaghir el image b aleb el border  */
     object-fit: contain;
     border: 2px solid #8E8D8A;
 }
@@ -119,7 +113,6 @@
         width: 60vw;
         z-index: 33;
         transform: translateX(-700px);
-        /* bas he tenshel bet bayen hedik el ahbe */
     }
 
     .transition-all {
@@ -131,7 +124,6 @@
         height: 100vh;
         width: 60vw;
         z-index: 33;
-        /* transform: translateX(-700px); */
     }
 
     .px-9 {
@@ -147,13 +139,6 @@
         font-size: 1.4rem;
         padding-inline: 22px;
     }
-
-    /* .navbar-option-mobile {
-        width: 100vw;
-        height: 40px;
-        position: fixed;
-        display: block;
-    } */
 
     .bars {
         height: 4px;
