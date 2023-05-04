@@ -5,9 +5,21 @@ import emailjs from '@emailjs/browser';
 //COMPONENTS
 import Header from './Header';
 import Footer from './Footer';
+import { AnimationLetter } from './AnimationLetter';
 
 export default function Contactme() {
     const form = useRef();
+
+    const handleEmailClick = () => {
+        const email = "tiaakiki12@gmail.com";
+        const subject = "Subject of the email";
+        const body = "Body of the email";
+        const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(
+            subject
+        )}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailtoUrl;
+    }
+
 
     const [name, setName] = useState("");
 
@@ -41,15 +53,37 @@ export default function Contactme() {
                     {/* component contact  */}
                     <div className='contact-me-card row'>
                         <div className='col-lg-6 col-md-5 col-sm-12 left-contact px-2 py-2 '>
-                            {/* <span className='get-in-touch mx-4 my-4'>Get in touch</span> */}
+                            {/* <span className='get-in-touch mx-4 my-2'>Get in touch</span> */}
 
-                            <div className='py-5 d-flex justify-content-center'>
+                            <div className='paddingAnimation d-flex justify-content-center'>
                                 <div className='flex-container'>
-                                    <div className='unit'>
-                                        <div className='heart-piece-0'>
+                                    {/* <div className='unit'> */}
+                                    {/* <div className='heart-piece-0'> */}
 
+                                    {/* the beginning of the animation letter  */}
+
+
+                                    <div onClick={handleEmailClick} className='letter-image'>
+                                        <div className='animated-mail'>
+                                            <div className='back-fold'></div>
+                                            <div className='letter'>
+                                                <div className='letter-border'></div>
+                                                <div className='letter-title'></div>
+                                                <div className='letter-context'></div>
+
+                                                <div className='letter-stamp'>
+                                                    <div className='letter-stamp-inner'></div>
+                                                </div>
+                                            </div>
+                                            <div className='top-fold'></div>
+                                            <div className='body'></div>
+                                            <div className='left-fold'></div>
                                         </div>
+                                        <div className='shadow'></div>
                                     </div>
+                                    {/* the end of the animation letter  */}
+                                    {/* </div> */}
+                                    {/* </div> */}
                                 </div>
                             </div>
                         </div>

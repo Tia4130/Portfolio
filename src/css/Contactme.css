@@ -37,6 +37,11 @@
 
 }
 
+.paddingAnimation {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
 .inputBoxSpan {
     position: absolute;
     left: 0;
@@ -55,12 +60,6 @@
 
 
 .relative-bg {
-    /* clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); */
-    /* clip-path: polygon(0% 0%, 76% 0%, 100% 40%, 66% 76%, 0% 76%); */
-    /* background: linear-gradient(-90deg,
-            #E9807A,
-            #E85A4F); */
-
     height: 100%;
     width: 100%;
     position: absolute;
@@ -180,6 +179,11 @@
 }
 
 @media (max-width: 786px) {
+    .paddingAnimation {
+        padding-top: 5rem !important;
+        padding-bottom: 6rem !important;
+    }
+
     .contact-me-card {
         height: 100%;
         padding: 0px 0px 40px;
