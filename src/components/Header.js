@@ -40,7 +40,7 @@ export default function Header() {
                 {/* mobile nav: */}
                 <div className='mobile-shouldnotshow'>
                     <div className=' d-flex flex-column'>
-                        <span className='mx-4 home-tab'><Link to="/">Home</Link></span>
+                        <span className='mx-4 home-tab'><Link to="/home">Home</Link></span>
                         <span className='mx-4 home-tab'><Link to="/about">About</Link></span>
                         {/* <span className='mx-4 home-tab'><Link to="/projects">Projects</Link></span> */}
                         <span className='mx-4 home-tab'><Link to="/contact-me"> Contact</Link></span>
