@@ -17,7 +17,7 @@ export default function Nav() {
                     <Link to='/'><span className='mx-4 nav-items'>Home</span></Link>
                     <Link to='/about'><span className='mx-4 nav-items'>About me</span></Link>
                     <Link to='/contact-me'> <span className='mx-4 nav-items'>Contact Me</span></Link>
-                    <Link to='/projects'> <span className='mx-4 nav-items'>Projects</span></Link>
+                    {/* <Link to='/projects'> <span className='mx-4 nav-items'>Projects</span></Link> */}
                 </div>
             </nav>
         </>
