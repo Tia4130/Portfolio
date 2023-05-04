@@ -31,10 +31,7 @@ export default function About() {
                                 </span>
                                 <span className='few-list'>
                                     <ul>
-                                        <li>JavaScript, css, and html</li>
-                                        <li>React.js and Redux</li>
-                                        <li>Django</li>
-                                        {/* <li></li> */}
+                                        I'm excited to share that I built my portfolio website using React.js, a powerful JavaScript library for building user interfaces, and added engaging animations using CSS.
                                     </ul>
                                 </span>
                             </span>
