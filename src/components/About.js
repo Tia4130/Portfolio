@@ -4,8 +4,18 @@ import '../css/About.css';
 //COMPONENTS
 import Header from './Header';
 import Footer from './Footer';
+import AnimationLetter from './AnimationLetter';
 
 export default function About() {
+    const handleEmailClick = () => {
+        const email = "tiaakiki12@gmail.com";
+        const subject = "Subject of the email";
+        const body = "Body of the email";
+        const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(
+            subject
+        )}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailtoUrl;
+    }
     return (
         <>
             <Header />
@@ -17,7 +27,24 @@ export default function About() {
                         {/* hon lezm zid about-box */}
                         {/* left side */}
                         <div className='col-lg-6 col-md-6 col-sm-12 d-flex align-items-center justify-content-center'>
-                            shi sura
+                            <div onClick={handleEmailClick} className='letter-imageAbout marginAnimation'>
+                                <div className='animated-mail'>
+                                    <div className='back-fold'></div>
+                                    <div className='letter'>
+                                        <div className='letter-border'></div>
+                                        <div className='letter-title'></div>
+                                        <div className='letter-context'></div>
+
+                                        <div className='letter-stamp'>
+                                            <div className='letter-stamp-inner'></div>
+                                        </div>
+                                    </div>
+                                    <div className='top-fold'></div>
+                                    <div className='body'></div>
+                                    <div className='left-fold'></div>
+                                </div>
+                                <div className='shadow'></div>
+                            </div>
                         </div>
 
                         {/* rightside */}

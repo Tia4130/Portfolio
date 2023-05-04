@@ -1,4 +1,18 @@
 /* design animation  */
+.letter-imageAbout {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.marginAnimation {
+    margin-top: 100px;
+    margin-left: 100px;
+}
 
 .animation-aboutme {
     color: #bf0741d2;
@@ -77,6 +91,22 @@
 
 
 @media (max-width: 786px) {
+    .letter-imageAbout {
+        position: absolute;
+        width: 110px;
+        height: 200px;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+
+    .marginAnimation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .animation-aboutme {
         font-size: 3rem;
     }
@@ -90,7 +120,7 @@
     }
 
     .about-box {
-        padding: 0px 0px 40px;
+        padding: 100px 0px 40px;
         width: 100%;
     }
 

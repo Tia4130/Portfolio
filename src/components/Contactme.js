@@ -53,7 +53,7 @@ export default function Contactme() {
                     {/* component contact  */}
                     <div className='contact-me-card row'>
                         <div className='col-lg-6 col-md-5 col-sm-12 left-contact px-2 py-2 '>
-                            {/* <span className='get-in-touch mx-4 my-2'>Get in touch</span> */}
+                            <span className='get-in-touch mx-4 my-2'>Get in touch</span>
 
                             <div className='paddingAnimation d-flex justify-content-center'>
                                 <div className='flex-container'>
