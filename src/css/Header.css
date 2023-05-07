@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+.hamburger-menu {
+    background-color: #BF0740;
+    height: 10px;
+    width: 50px;
+    padding-top: -5px;
+}
+
 .mobile-shouldnotshow {
     display: none;
 }
@@ -29,7 +36,7 @@
 }
 
 #toggle-btn {
-    background-color: #0f1730;
+    background-color: #1A1A1C;
     color: #ffffff;
     height: 100px;
     width: 100px;

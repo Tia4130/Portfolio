@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react'
 import { Link } from "react-router-dom"
-import logoUser from '../image/logoUser-100.jpg';
 import '../css/Header.css';
 import Nav from './Nav';
+
+//IMAGE
+import menuLogo from '../image/menu.png';
+
 export default function Header() {
 
     useEffect(() => {
@@ -44,7 +47,12 @@ export default function Header() {
                         <span className='mx-4 home-tab'><Link to="/about">About</Link></span>
                         {/* <span className='mx-4 home-tab'><Link to="/projects">Projects</Link></span> */}
                         <span className='mx-4 home-tab'><Link to="/contact-me"> Contact</Link></span>
-                        <img id="toggle-btn" className='home-img-logo' src={logoUser} alt="logo" />
+                        <img id="toggle-btn" className='home-img-logo' src={menuLogo} alt="logo" />
+                        {/* <div id="toggle-btn" className='home-img-logo'>
+                            <div className='hamburger-menu'></div>
+                            <div className='hamburger-menu'></div>
+                            <div className='hamburger-menu'></div>
+                        </div> */}
                     </div>
                 </div>
             </div>
