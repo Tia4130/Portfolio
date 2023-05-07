@@ -1,3 +1,26 @@
+.text-above {
+    color: white;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    color: rgb(236, 224, 224);
+
+}
+
+.left-side-about {
+    text-align: center;
+    vertical-align: middle;
+    height: 300px;
+}
+
+.letter-container {
+    cursor: pointer;
+}
+
+.imgContainer {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 .letter-imageAbout {
     position: absolute;
     width: 200px;
@@ -22,10 +45,24 @@
 }
 
 .animation-aboutme {
-    background: linear-gradient(to right, #bf0741d2 0, #4E4E50 10%, #4E4E50 20%, #bf0741d2 50%);
+    background: linear-gradient(to right, #bf0741d2 0, #4E4E50 10%, #504e50 20%, #bf0741d2 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: shine 3s infinite linear;
+}
+
+.animation-aboutme-text {
+    color: #f07ee3;
+    font-family: "Fira+Sans+Condensed";
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+}
+
+.animation-aboutme-text {
+    background: linear-gradient(to right, #f07ee3 0, #7eecf0 10%, #504c4dd2 30%, #ec98b3d2 30%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 10s infinite linear;
 }
 
 .last-underline {
@@ -37,8 +74,8 @@
 
 .about-box {
     background: #1c1c1c;
-    width: 80%;
-    box-shadow: 0px 0px 30px 0px #4E4E50;
+    /* width: 80%; */
+    box-shadow: 0px 0px 30px 0px #ebabd5;
     height: auto;
     margin-inline: auto;
 }
@@ -53,13 +90,14 @@
     font-size: 1.1rem;
     opacity: 0.8;
     text-align: justify;
-    color: white;
+    color: rgb(236, 224, 224);
     padding-right: 15px;
 }
 
 .few-highlights {
     padding-block: 20px;
-    color: white;
+    color: rgb(236, 224, 224);
+    opacity: 0.9;
 }
 
 .few-text {

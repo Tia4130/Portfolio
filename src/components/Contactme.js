@@ -5,7 +5,6 @@ import emailjs from '@emailjs/browser';
 //COMPONENTS
 import Header from './Header';
 import Footer from './Footer';
-import { AnimationLetter } from './AnimationLetter';
 
 export default function Contactme() {
     const form = useRef();
