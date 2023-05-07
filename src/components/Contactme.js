@@ -2,6 +2,9 @@ import React, { useState, useRef } from 'react'
 import '../css/Contactme.css';
 import emailjs from '@emailjs/browser';
 
+//IMAGES
+import letter from '../image/letter.png';
+
 //COMPONENTS
 import Header from './Header';
 import Footer from './Footer';
@@ -51,40 +54,16 @@ export default function Contactme() {
                     <span className='under-title my-4'>Lets keep in touch</span>
                     {/* component contact  */}
                     <div className='contact-me-card row'>
-                        <div className='col-lg-6 col-md-5 col-sm-12 left-contact px-2 py-2 '>
-                            <span className='get-in-touch mx-4 my-2'>Get in touch</span>
+                        <div className='col-lg-6 col-md-5 col-sm-12'>
+                            {/* <span className='get-in-touch mx-4 my-2'>Get in touch</span> */}
 
-                            <div className='paddingAnimation d-flex justify-content-center'>
-                                <div className='flex-container'>
-                                    {/* <div className='unit'> */}
-                                    {/* <div className='heart-piece-0'> */}
-
-                                    {/* the beginning of the animation letter  */}
-
-
-                                    <div onClick={handleEmailClick} className='letter-image'>
-                                        <div className='animated-mail'>
-                                            <div className='back-fold'></div>
-                                            <div className='letter'>
-                                                <div className='letter-border'></div>
-                                                <div className='letter-title'></div>
-                                                <div className='letter-context'></div>
-
-                                                <div className='letter-stamp'>
-                                                    <div className='letter-stamp-inner'></div>
-                                                </div>
-                                            </div>
-                                            <div className='top-fold'></div>
-                                            <div className='body'></div>
-                                            <div className='left-fold'></div>
-                                        </div>
-                                        <div className='shadow'></div>
-                                    </div>
-                                    {/* the end of the animation letter  */}
-                                    {/* </div> */}
-                                    {/* </div> */}
+                            <div className='left-side-contact'>
+                                <div className='text-above'>If you would like to get in touch, don't hesitate to email me, by clicking the letter below to send me an email, OR fill out the form on the right-hand side of the page.</div>
+                                <div onClick={handleEmailClick} className='letter-container'>
+                                    <img className='imgContainer' src={letter} />
                                 </div>
                             </div>
+
                         </div>
 
                         <div className='col-lg-6 col-md-5 col-sm-12 my-auto '>
