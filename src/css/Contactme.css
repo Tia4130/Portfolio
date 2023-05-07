@@ -21,6 +21,19 @@
     width: 250px;
 }
 
+.input-groups-after {
+    width: 80%;
+    border: 1px solid rgb(255, 255, 255, 0.7);
+    background-color: #1c1c1c;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+    font-size: 1rem;
+    color: white;
+    align-items: center;
+    margin-inline: auto;
+}
+
 .input-groups {
     align-items: center;
     width: 80%;
@@ -97,7 +110,21 @@
     font-size: 2rem;
 }
 
-
+.card-contact-right-send {
+    border-radius: 20px;
+    width: 90%;
+    padding: 10px 10px;
+    content: '';
+    background: linear-gradient(45deg, #C3083F, #e4237397, #4E4E50, #cb5c7d, #6F2232, #78595f, #43162a, #b31a61);
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    animation: glowing 100s infinite;
+    transition: opacity .3s ease-in-out;
+    text-align: center;
+    justify-content: center;
+}
 
 .card-contact-right {
     border-radius: 20px;

@@ -27,6 +27,8 @@ export default function Contactme() {
 
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+    const [isSubmitted, setIsSubmitted] = useState(false);
+
     const sendEmail = (e) => {
         e.preventDefault();
 
@@ -34,10 +36,12 @@ export default function Contactme() {
             .then((result) => {
                 console.log("result", result)
                 console.log(result.text);
+                setIsSubmitted(true);
+
             }, (error) => {
                 console.log(error.text);
             });
-        e.target.reset("");
+        e.target.reset(" ");
     };
 
     return (
@@ -51,7 +55,7 @@ export default function Contactme() {
                 <div className='contact-inner-part d-flex flex-column'>
 
                     <span className='animation-aboutme'>Contact Me</span>
-                    <span className='under-title my-4'>Lets keep in touch</span>
+                    <span className='under-title my-4'></span>
                     {/* component contact  */}
                     <div className='contact-me-card row'>
                         <div className='col-lg-6 col-md-5 col-sm-12'>
@@ -67,58 +71,72 @@ export default function Contactme() {
                         </div>
 
                         <div className='col-lg-6 col-md-5 col-sm-12 my-auto '>
-                            <form ref={form} onSubmit={sendEmail} className='d-flex flex-column card-contact-right'>
-
-
-                                <div className='input-group1 d-flex flex-column'>
-                                    <input
-                                        required
-                                        name="from_name"
-                                        value={name}
-                                        onChange={(e) => {
-                                            setName(e.target.value);
-                                        }}
-                                        type="text"
-                                        placeholder='Enter Your Name'
-                                        className='input-groups' />
+                            {isSubmitted ? (
+                                <div className='card-contact-right-send '>
+                                    <br />
+                                    <div className='input-groups-after'>Thank You</div>
+                                    <br />
+                                    <div className='input-groups-after'>for contacting me!!</div>
+                                    <br />
+                                    <div className='input-groups-after'>Your message has been sent successfully</div>
+                                    <br />
                                 </div>
+                            )
+                                :
+                                (
+                                    <form ref={form} onSubmit={sendEmail} className='d-flex flex-column card-contact-right'>
 
-                                <div className='input-group1 d-flex flex-column'>
 
-                                    {/* <label>Email</label> */}
-                                    <input
-                                        required
-                                        name="user_email"
-                                        value={email}
-                                        onChange={(e) => {
-                                            setEmail(e.target.value);
-                                        }}
-                                        type="text"
-                                        placeholder='Enter Your Email'
-                                        className='input-groups' />
-                                </div>
+                                        <div className='input-group1 d-flex flex-column'>
+                                            <input
+                                                required
+                                                name="from_name"
+                                                value={name}
+                                                onChange={(e) => {
+                                                    setName(e.target.value);
+                                                }}
+                                                type="text"
+                                                placeholder='Enter Your Name'
+                                                className='input-groups' />
+                                        </div>
 
-                                <div className='input-group1 d-flex flex-column'>
+                                        <div className='input-group1 d-flex flex-column'>
 
-                                    {/* <label>Message</label> */}
-                                    <textarea
-                                        required
-                                        name="message"
-                                        value={message}
-                                        onChange={(e) => {
-                                            setMessage(e.target.value);
-                                        }}
-                                        type="text" placeholder='Enter Your Message' className='input-groups' />
-                                </div>
+                                            {/* <label>Email</label> */}
+                                            <input
+                                                required
+                                                name="user_email"
+                                                value={email}
+                                                onChange={(e) => {
+                                                    setEmail(e.target.value);
+                                                }}
+                                                type="text"
+                                                placeholder='Enter Your Email'
+                                                className='input-groups' />
+                                        </div>
 
-                                <div className='input-group1 my-3 d-flex flex-column'>
+                                        <div className='input-group1 d-flex flex-column'>
 
-                                    {/* <input className='glow-on-hover' type='submit' value='Send Message' /> */}
-                                    <button className='glow-onhover-contactme-button' type='submit' value='Send Message'>
-                                        Send Message
-                                    </button>
-                                </div>
-                            </form>
+                                            {/* <label>Message</label> */}
+                                            <textarea
+                                                required
+                                                name="message"
+                                                value={message}
+                                                onChange={(e) => {
+                                                    setMessage(e.target.value);
+                                                }}
+                                                type="text" placeholder='Enter Your Message' className='input-groups' />
+                                        </div>
+
+                                        <div className='input-group1 my-3 d-flex flex-column'>
+
+                                            {/* <input className='glow-on-hover' type='submit' value='Send Message' /> */}
+                                            <button className='glow-onhover-contactme-button' type='submit' value='Send Message'>
+                                                Send Message
+                                            </button>
+                                        </div>
+                                    </form>
+                                )}
                         </div>
                     </div>
                 </div>
