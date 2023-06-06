@@ -1,8 +1,29 @@
+
+/* color i need:
+8E806A
+C3B091
+E4CDA7
+FFE6BC
+. */
+
+#light {
+    background-color: #FFE6BC;
+}
+
+#dark {
+    background-color: #1c1c1c;
+}
 .text-above {
-    color: white;
     letter-spacing: 1px;
     opacity: 0.8;
     color: rgb(236, 224, 224);
+
+}
+
+#light .text-above {
+    letter-spacing: 1px;
+    opacity: 0.8;
+    color: #FFE6BC;
 
 }
 
@@ -51,6 +72,21 @@
     animation: shine 3s infinite linear;
 }
 
+#light .animation-aboutme{
+    color: #8E806A;
+    font-family: "Fira+Sans+Condensed";
+    font-size: 4.3rem;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#light .animation-aboutme {
+    background: linear-gradient(to right, #3b362e 0, #3b362e 10%, #8E806A 20%, #C3B091 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+}
+
 .animation-aboutme-text {
     color: #f07ee3;
     font-family: "Fira+Sans+Condensed";
@@ -59,7 +95,20 @@
 }
 
 .animation-aboutme-text {
-    background: linear-gradient(to right, #f07ee3 0, #7eecf0 10%, #504c4dd2 30%, #ec98b3d2 30%);
+    background: linear-gradient(to right, #f07ee3 0, #7eecf0 10%, #504c4dd2 30%, #ec98b3d2 30%);    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 10s infinite linear;
+}
+
+#light .animation-aboutme-text {
+    color: #3b362e;
+    font-family: "Fira+Sans+Condensed";
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+}
+
+#light .animation-aboutme-text {
+    background: linear-gradient(to right, #3b362e 0, #3b362e 50%, #8E806A 20%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: shine 10s infinite linear;
@@ -80,6 +129,13 @@
     margin-inline: auto;
 }
 
+#light .about-box {
+    background: #9BABB8;
+    /* width: 80%; */
+    box-shadow: 0px 0px 30px 0px #4f433f;
+    height: auto;
+    margin-inline: auto;
+}
 .aboutme-inside {
     width: 70%;
     margin-inline: auto;
@@ -94,9 +150,22 @@
     padding-right: 15px;
 }
 
+#light .some-text-about-me {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    text-align: justify;
+    color: #FFE6BC;
+    padding-right: 15px;
+}
+
 .few-highlights {
     padding-block: 20px;
     color: rgb(236, 224, 224);
+    opacity: 0.9;
+}
+#light .few-highlights {
+    padding-block: 20px;
+    color: #E4CDA7;
     opacity: 0.9;
 }
 

@@ -35,9 +35,34 @@
     font-size: 15px;
 }
 
+#light .menu a {
+    background-color: none;
+    height: 60px;
+    width: 60px;
+    font-size: 22px;
+    color: #0b0b0b;
+    top: 30px;
+    left: 30px;
+    transition: 0.5s;
+    font-size: 15px;
+}
+
 #toggle-btn {
     background-color: #1A1A1C;
     color: #ffffff;
+    height: 100px;
+    width: 100px;
+    border: none;
+    font-size: 40px;
+    top: 15px;
+    left: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#light #toggle-btn {
+    background-color: #9BABB8;
+    color: #8E806A;
     height: 100px;
     width: 100px;
     border: none;
