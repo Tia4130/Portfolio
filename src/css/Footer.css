@@ -1,53 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
-.waterContainer {
-    width: 100%;
-    background-color: #ffffff;
-    height: 200px;
-    border-radius: 0 0 40px 40px;
-    box-shadow: inset 0 0 50px #1c637c;
-    position: relative;
-    overflow: hidden;
-
-}
-
-.waterContainer::before {
-    position: absolute;
-    content: '';
-    width: 200%;
-    height: 200%;
-    background-color: #122e6b;
-    top: -150%;
-    left: -50%;
-    border-radius: 40%;
-    animation: wave 12s infinite linear;
-}
-
-.waterContainer::after {
-    position: absolute;
-    content: '';
-    width: 204%;
-    height: 204%;
-    background-color: #1b99ed80;
-    top: -150%;
-    left: -52%;
-    border-radius: 40%;
-    animation: wave 12s infinite linear;
-    animation-delay: 0.5s;
-}
-
-@keyframes wave {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(180deg);
-    }
-}
-
-
-
 .social-buttons {
     display: inline-block;
     background: none;

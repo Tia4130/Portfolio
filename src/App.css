@@ -10,10 +10,12 @@
 
 }
 
-.App {
-  /* margin-top: 40px; */
+.switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
 }
-
 .herosection {
   background-color: #EAE7DC;
   clip-path: polygon(0 0, 100% 0, 100% 74%, 50% 100%, 0 76%);
