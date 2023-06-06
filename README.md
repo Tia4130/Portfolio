@@ -1,10 +1,6 @@
 when deploying in netfly :
 CI= npm run build
 
-1-fix the letter about/contact
+1- fix button switch design
 
-2-fix the sizes + frames
-
-3-fix the logo 
-
-4-fix the name of the website 
+2- fix email regex
