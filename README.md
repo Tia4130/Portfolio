@@ -1,7 +1,7 @@
 when deploying in netfly :
 CI= npm run build
 
-1- fix button switch design
+1- fix button switch design vv
 
 2- fix email regex
 
