@@ -99,12 +99,12 @@
 }
 
 
-.relative-bg {
+/* .relative-bg {
     height: 100%;
     width: 100%;
     position: absolute;
     z-index: -4;
-}
+} */
 
 .contact-me-card {
     background: #1c1c1c;

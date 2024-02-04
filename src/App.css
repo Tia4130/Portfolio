@@ -22,12 +22,12 @@ body {
 
 #dark {
   background-color: #1c1c1c;
-  height: 810px;
+  /* height: 'auto'; */
 }
 
 #light{
   background-color: #FFE6BC;
-  height: 810px;
+  /* height: 810px; */
 }
 
 .toggle {
