@@ -4,7 +4,8 @@
 
 .Home-container {
     color: white;
-    margin-top: 80px;
+    /* margin-top: 80px; */
+    margin-top: 160px;
 }
 
 #light .Home-container{

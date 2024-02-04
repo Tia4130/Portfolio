@@ -19,16 +19,15 @@ function App() {
   return (
     <ThemeContext.Provider value={{ theme, toogleTheme }}>
       <div className="App flex-column" id={theme}>
-        <div className='switch'>
+        {/* <div className='switch'>
           <label class="toggle">
             <input class="toggle-checkbox"
               type="checkbox"
               onChange={toogleTheme}
               checked={theme === "light"} />
             <div class="toggle-switch"></div>
-            {/* <span class="toggle-label" >{theme === "light" ? "light mode" : "dark mode"}</span> */}
           </label>
-        </div>
+        </div> */}
 
         <Routes>
           <Route path="/" element={<Home />} />
