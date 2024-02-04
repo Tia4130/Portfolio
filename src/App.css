@@ -20,6 +20,16 @@ body {
 	font-family: -apple-system,".SFNSText-Regular","Helvetica Neue","Roboto","Segoe UI",sans-serif;
 }
 
+#dark {
+  background-color: #1c1c1c;
+  height: 810px;
+}
+
+#light{
+  background-color: #FFE6BC;
+  height: 810px;
+}
+
 .toggle {
 	cursor: pointer;
 	display: inline-block;
