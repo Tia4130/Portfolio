@@ -22,12 +22,16 @@ export default function Contactme() {
         window.location.href = mailtoUrl;
     }
 
+    const HandleRefreshPage = () => {
+        window.location.reload();
+    }
 
     const [name, setName] = useState("");
 
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [isValidEmail, setIsValidEmail] = useState(true);
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -80,6 +84,9 @@ export default function Contactme() {
                                     <br />
                                     <div className='input-groups-after'>Your message has been sent successfully</div>
                                     <br />
+                                    <button className='glow-onhover-contactme-button' type='refresh' value='refresh' onClick={HandleRefreshPage}>
+                                        Send another email
+                                    </button>
                                 </div>
                             )
                                 :
@@ -112,7 +119,10 @@ export default function Contactme() {
                                                 }}
                                                 type="text"
                                                 placeholder='Enter Your Email'
-                                                className='input-groups' />
+                                                className={`input-groups ${isValidEmail ? '' : 'invalid'}`}
+                                                pattern="[^\s@]+@[^\s@]+\.(com)+"
+                                                title="Please enter a valid email address" />
+                                            {!isValidEmail && <p className="error-message">Please enter a valid email address.</p>}
                                         </div>
 
                                         <div className='input-group1 d-flex flex-column'>
