@@ -1,0 +1,89 @@
+.certificate-container{
+    margin: 60px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    cursor: pointer;
+}
+
+.text-title-certificate{
+font-family: "Fira+Sans+Condensed";
+color: white;
+margin-bottom: 10px;
+}
+
+.text-desc-certificate{
+    font-family: "Fira+Sans+Condensed";
+    color: rgb(183 175 175);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.col-margin{
+    margin-right: 60px;
+}
+
+.certificate-image {
+        max-width: 100%;
+        height: auto;
+}
+
+.icon-part{
+    display: flex;
+    place-items: center;
+    margin: 110px;
+}
+
+.eye-style{
+    cursor: pointer;
+}
+
+.download-style{
+    cursor: pointer;
+}
+.animation-certificate {
+    color: #bf0741d2;
+    font-family: "Fira+Sans+Condensed";
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-inline: 20px;
+}
+
+.animation-certificate {
+    background: linear-gradient(to right, #dfd8dad2 0, #b9b9b9 10%, #7f7b7f 20%, #9a8088d2 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 4s infinite linear;
+}
+
+@media (max-width: 500px) {
+    .col-margin{
+        margin-right: 0px;
+    }
+    .certificate-container{
+        margin: 60px 30px;
+    }
+}
+
+.container-card{
+    min-height: 100vh;
+}
+
+.card{
+    background-color: #1c1c1c;
+    padding: 1rem 1rem;
+    margin-top: 50px;
+    box-shadow: 0px 0px 30px 0px #ebabd5;
+}
+
+.text-animation-card{
+    line-height: 150%;
+    float: right;
+}
+
+@media (max-width: 768px) {
+.certification-section{
+    margin-top: 165px;
+}
+}

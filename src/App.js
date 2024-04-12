@@ -6,6 +6,7 @@ import { createContext } from 'react'
 import Home from './components/Home';
 import About from './components/About';
 import Contactme from './components/Contactme';
+import Certificate from './components/Certificate';
 // import Projects from './components/Projects';
 
 import { Route, Routes } from "react-router-dom"
@@ -33,6 +34,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact-me" element={<Contactme />} />
+          <Route path="/certificate" element={<Certificate />} />
           {/* <Route path="/projects" element={<Projects />} /> */}
         </Routes>
 
