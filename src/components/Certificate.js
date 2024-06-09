@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 //UTILS
 import { Col, Row } from 'reactstrap';
@@ -17,6 +17,11 @@ import Footer from "./Footer";
 import CardCertificate from "./cardCertificate/CardCertificate";
 
 function Certificate() {
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
 
     var arrayListCertficate = [
         { title: "Bachelor Of Science", imgSrc: BachelorScience, description: "In 2022, I obtained my Bachelor of Science certificate from AUL Jounieh. This achievement reflects my dedication to academic pursuits and my commitment to advancing my knowledge in the sciences. It marks a significant milestone in my educational journey, and I'm eager to apply the skills and knowledge gained to future endeavors\u2764" },
@@ -29,7 +34,8 @@ function Certificate() {
     return (
         <>
             <Header />
-            <div className="certification-section">
+            <div className={`certification-section ${isMounted ? 'slide-in' : ''}`}>
+
                 <div className="d-flex flex-column">
                     <span className="animation-aboutme">My Certificate</span>
                     <div className="animation-certificate">{`\u2764`}For more details you can click on the card.{`\u2764`}Inside, you will find a view button and download option for further exploration{`\u2764`}</div>

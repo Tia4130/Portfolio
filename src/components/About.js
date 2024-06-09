@@ -1,14 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import '../css/About.css';
 
-//COMPONENTS
+// COMPONENTS
 import Header from './Header';
 import Footer from './Footer';
 
-//IMAGE
+// IMAGE
 import letter from '../image/letter.png';
 
 export default function About() {
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
+
     const handleEmailClick = () => {
         const email = "tiaakiki12@gmail.com";
         const subject = "Subject of the email";
@@ -18,10 +24,11 @@ export default function About() {
         )}&body=${encodeURIComponent(body)}`;
         window.location.href = mailtoUrl;
     }
+
     return (
         <>
             <Header />
-            <div className='about-me-section aboutme-inside'>
+            <div className={`about-me-section aboutme-inside ${isMounted ? 'slide-in' : ''}`}>
                 <div className='d-flex flex-column'>
                     <span className='animation-aboutme'>About Me</span>
 
@@ -38,20 +45,13 @@ export default function About() {
                         </div>
 
                         {/* rightside */}
-                        <di0v className='col-lg-6 col-md-6 col-sm-12 py-5 d-flex flex-column'>
+                        <div className='col-lg-6 col-md-6 col-sm-12 py-5 d-flex flex-column'>
                             <span className='some-text-about-me'>
-                                I am a recent <span className='animation-aboutme-text'>computer science</span> graduate, I bring extensive <span className='animation-aboutme-text'>experience</span>, working with technologies such as JavaScript, React, and Django. I graduated in <span className='animation-aboutme-text'>August 2022 </span> and gained this experience through my work experience prior to graduation. I am <span className='animation-aboutme-text'>confident</span> in my ability to develop effective solutions using these technologies and am eager to continue building and developing  as I pursue my career <span className='animation-aboutme-text'>goals.</span>                            </span>
-                            <span className='few-highlights'>
-                                <span className='few-text'>
-                                    Here are few highlights
-                                </span>
-                                <span className='few-list'>
-                                    <ul>
-                                        I'm excited to share that I built <span className='animation-aboutme-text'>my portfolio</span> website using React.js, a powerful JavaScript library for building user interfaces, and added engaging animations using CSS.
-                                    </ul>
-                                </span>
+                                I graduated with a degree in <span className='animation-aboutme-text'>computer science</span> in August 2022. Since then, I have gained extensive experience with JavaScript, React, Django, Node.js, SQL, and WordPress, continuously learning and applying my skills practically. <br /> <br />
+                                I created an <span className='animation-aboutme-text'>E-Commerce website</span>, <a className='link-style-href' href="https://tibousshop.com/">TibousShop</a> for my online shop using WordPress, showcasing my ability to develop attractive web solutions. I also built <span className='animation-aboutme-text'>my portfolio</span> using React.js with engaging CSS animations. You can find all my projects in the <a className='link-style-href' href="/project">Projects section.</a><br /> <br />
+                                I'm currently enhancing my skills through certifications and hands-on practice. Confident in developing effective solutions, I'm eager to advance in my career.
                             </span>
-                        </di0v>
+                        </div>
                     </div>
                 </div>
             </div>

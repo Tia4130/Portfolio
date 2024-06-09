@@ -1,11 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Fira+Sans+Condensed:wght@200&family=Pacifico&display=swap');
 
 
+/* Slide-in animation for the image */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Slide-in animation for the text */
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Apply animation to elements */
+.photo-me {
+    animation: slideInFromLeft 0.5s ease-in-out forwards;
+}
+
+.text-slide-in {
+    animation: slideInFromRight 1s ease-in-out forwards;
+}
 
 .Home-container {
     color: white;
-    /* margin-top: 80px; */
-    margin-top: 160px;
+    margin-top: 80px;
 }
 
 #light .Home-container{
@@ -242,9 +269,9 @@ p {
     }
 
     .photo-me{
-        width: 60%;
+        width: 50%;
         margin-bottom: 50px;
-        border: #EEE3CB solid 2px;
+        border-bottom: #EEE3CB solid 2px;
         border-radius: 50%;
     }
 

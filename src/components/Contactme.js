@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import '../css/Contactme.css';
 import emailjs from '@emailjs/browser';
 
@@ -10,6 +10,12 @@ import Header from './Header';
 import Footer from './Footer';
 
 export default function Contactme() {
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
+
     const form = useRef();
 
     const handleEmailClick = () => {
@@ -51,7 +57,7 @@ export default function Contactme() {
     return (
         <>
             <Header />
-            <div className='contact-me-part py-4'>
+            <div className={`contact-me-part py-4' ${isMounted ? 'slide-in' : ''}`}>
                 <div className='relative-bg'>
 
                 </div>

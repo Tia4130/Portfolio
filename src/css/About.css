@@ -6,7 +6,27 @@ E4CDA7
 FFE6BC
 . */
 
+.slide-in {
+    animation: slideInAnimation 1s ease-in-out forwards;
+}
 
+@keyframes slideInAnimation {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.link-style-href{
+    color: white;
+    text-decoration: underline;
+}
+.link-style-href:hover{
+    color: #f07ee3 ;
+    text-decoration: underline;
+}
 .text-above {
     letter-spacing: 1px;
     opacity: 0.8;

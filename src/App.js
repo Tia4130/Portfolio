@@ -7,7 +7,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Contactme from './components/Contactme';
 import Certificate from './components/Certificate';
-// import Projects from './components/Projects';
+import Project from './components/Project';
 
 import { Route, Routes } from "react-router-dom"
 export const ThemeContext = createContext(null);
@@ -35,7 +35,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact-me" element={<Contactme />} />
           <Route path="/certificate" element={<Certificate />} />
-          {/* <Route path="/projects" element={<Projects />} /> */}
+          <Route path="/project" element={<Project />} />
         </Routes>
 
       </div>
