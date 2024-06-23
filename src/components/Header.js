@@ -1,20 +1,21 @@
-import React, { useEffect } from 'react'
-import { Link } from "react-router-dom"
+import React, { useContext, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../css/Header.css';
 import Nav from './Nav';
-
-//IMAGE
-import menuLogo from '../image/menu.png';
+import lightLogo from '../image/menu2.png'; // Import light mode image
+import darkLogo from '../image/menu.png'; // Import dark mode image
+import { ThemeContext } from '../App'; // Import ThemeContext
 
 export default function Header() {
+    const { theme } = useContext(ThemeContext);
 
+    const currentLogo = theme === "dark" ? darkLogo : lightLogo;
     useEffect(() => {
         let toggleBtn = document.getElementById("toggle-btn");
         let menuItems = document.querySelectorAll(".menu a");
         let menuActive = false;
         toggleBtn.addEventListener("click", () => {
             if (!menuActive) {
-                //the old when i have projects
                 menuItems[0].style.transform = "translate(70px,-30px)";
                 menuItems[1].style.transform = "translate(77px,5px)";
                 menuItems[2].style.transform = "translate(70px,37px)";
@@ -34,22 +35,20 @@ export default function Header() {
     }, []);
     return (
         <>
-            {/* website nav:  */}
             <Nav />
             <div className="menu">
-
-                {/* mobile nav: */}
                 <div className='mobile-shouldnotshow'>
-                    <div className=' d-flex flex-column'>
+                    <div className='d-flex flex-column'>
                         <span className='mx-4 home-tab'><Link to="/">Home</Link></span>
                         <span className='mx-4 home-tab'><Link to="/about">About</Link></span>
                         <span className='mx-4 home-tab'><Link to="/contact-me"> Contact</Link></span>
                         <span className='mx-4 home-tab'><Link to="/certificate">Certificate</Link></span>
                         <span className='mx-4 home-tab'><Link to="/project">Project</Link></span>
-                        <img id="toggle-btn" className='home-img-logo' src={menuLogo} alt="logo" />
+                        <img id="toggle-btn" className='home-img-logo' src={currentLogo} alt="logo" />
+
                     </div>
                 </div>
             </div>
         </>
-    )
+    );
 }

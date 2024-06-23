@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ProjectCard({ imageUrl, title, roles, backgroundColor, description, websiteLink, githubLink }) {
+function ProjectCard({ imageUrl, title, roles, description, websiteLink, githubLink }) {
     return (
         <article className="projcard-container">
             <div className="projcard projcard-blue img-right">
@@ -19,7 +19,7 @@ function ProjectCard({ imageUrl, title, roles, backgroundColor, description, web
                                 <a href="#" rel="tag" key={index}>{role}</a>
                             ))}
                         </div>
-                        <div className="projcard-bar" style={{ backgroundColor: backgroundColor }}></div>
+                        <div className="projcard-bar" ></div>
                         <div className="projcard-description">
                             <div>{description}</div>
                             <div className="project-links">

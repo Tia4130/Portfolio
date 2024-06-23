@@ -43,7 +43,7 @@ function Certificate() {
                 <div className="container-card">
                     <Row className="certificate-container">
                         {arrayListCertficate.map((certificateList, index) => (
-                            <Col key={index} xs="12" md="6" xl="3" lg="3" className="col-margin">
+                            <Col key={index} xs="12" md="6" xl="3" lg="4" className="col-margin">
                                 <CardCertificate
                                     title={certificateList.title}
                                     description={certificateList.description}

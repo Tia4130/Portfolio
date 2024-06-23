@@ -28,7 +28,6 @@ function Project() {
                             imageUrl={tibouWebsiteImage}
                             title="Tibou Shop Website"
                             roles={["E-Commerce, ", "Wordpress"]}
-                            backgroundColor="#bf0741d2"
                             description="Introducing Tibou Perfume and Tibou.lb, two online shops born from a shared passion for beauty and elegance. Tibou Perfume offers a curated collection of enchanting fragrances that evoke emotion and allure, while Tibou.lb caters to your accessory needs with a range of stylish and captivating items. Together, we strive to enhance your personal expression and elevate your senses."
                             websiteLink="https://tibousshop.com/"
                         // githubLink="https://github.com/devmemphis"

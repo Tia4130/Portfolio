@@ -32,13 +32,13 @@
 
 .Home-container {
     color: white;
-    margin-top: 80px;
+    margin-top: 120px;
 }
 
 #light .Home-container{
-    background: #FFE6BC;
+    background: #fcfcfc;
     color: #8E806A; 
-    margin-top: 80px;
+    margin-top: 120px;
 }
 .home-tab {
     cursor: pointer;
@@ -106,7 +106,7 @@ p {
 }
 
 #light p {
-    background: linear-gradient(to right,  #8E806A, #C3B091, #4E4E50, rgb(163, 147, 121), #696050, #78595f, #6b6f22);
+    background: linear-gradient(to right, #7b7b84d2 0, #16165b 40%, #000000d2 20%, #000000d2 10%);   
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: shine 3s infinite linear;
@@ -146,7 +146,7 @@ p {
     border: none;
     outline: none;
     color: #fff;
-    background: #fefbfb;
+    background: #0e4589;
     cursor: pointer;
     position: relative;
     z-index: 0;
@@ -174,8 +174,7 @@ p {
 
 #light .glow-on-hover:before {
     content: '';
-    background: linear-gradient(45deg, #8E806A, #C3B091, #4E4E50, #E4CDA7, #6F2232, #78595f, #6b6f22, #d9b74f);
-    position: absolute;
+    background: linear-gradient(to right, #163369, #5d7ba4, #a1a1a4, #b3cee2);    position: absolute;
     top: -2px;
     left: -2px;
     background-size: 400%;
@@ -213,36 +212,9 @@ p {
     border-radius: 10px;
 }
 
- #light .glow-on-hover {
-    width: 220px;
-    height: 50px;
-    border: none;
-    outline: none;
-    color: #EEE3CB;
-    background: #1c1c1c;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
-    margin-top: 40px;
-}
 
-    #light .glow-on-hover:before {
-        content: '';
-        background: linear-gradient(45deg, #8E806A, #C3B091, #4E4E50, rgb(163, 147, 121), #696050, #78595f, #6b6f22);
-        position: absolute;
-        top: -2px;
-        left: -2px;
-        background-size: 400%;
-        z-index: -1;
-        filter: blur(5px);
-        width: calc(100% + 4px);
-        height: calc(100% + 4px);
-        animation: glowing 20s linear infinite;
-        opacity: 0;
-        transition: opacity .3s ease-in-out;
-        border-radius: 10px;
-    }
+
+
     
     #light .glow-on-hover:active {
         color: #EEE3CB;
@@ -262,7 +234,7 @@ p {
         position: absolute;
         width: 100%;
         height: 100%;
-        background: #111;
+        background: #0e4589;
         left: 0;
         top: 0;
         border-radius: 10px;
@@ -276,9 +248,9 @@ p {
     }
 
     #light .photo-me{
-        width: 60%;
+        width: 50%;
         margin-bottom: 50px;
-        border: #1c1c1c solid 2px;
+        border-bottom: #0e4589 solid 4px;
         border-radius: 50%;
     }
 
