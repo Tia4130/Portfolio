@@ -24,10 +24,10 @@ function Certificate() {
     }, []);
 
     var arrayListCertficate = [
-        { title: "Bachelor Of Science", imgSrc: BachelorScience, description: "In 2022, I obtained my Bachelor of Science certificate from AUL Jounieh. This achievement reflects my dedication to academic pursuits and my commitment to advancing my knowledge in the sciences. It marks a significant milestone in my educational journey, and I'm eager to apply the skills and knowledge gained to future endeavors\u2764" },
-        { title: "React Basic certificate", imgSrc: ReactBasic, description: "In 2023, I earned a React Basic certificate from HackerRank. It validates my understanding of core React concepts like components, state management, props, and JSX syntax, marking a significant step in my journey towards mastering front-end web development\u2764" },
+        { title: "Bachelor Of Science", imgSrc: BachelorScience, description: "In 2022, I obtained my Bachelor of Science certificate from AUL Jounieh. This achievement reflects my dedication to academic pursuits and my commitment to advancing my knowledge in the sciences. It marks a significant milestone in my educational journey, and I'm eager to apply the skills and knowledge gained to future endeavors" },
+        { title: "React Basic certificate", imgSrc: ReactBasic, description: "In 2023, I earned a React Basic certificate from HackerRank. It validates my understanding of core React concepts like components, state management, props, and JSX syntax, marking a significant step in my journey towards mastering front-end web development" },
         {
-            title: "Introduction To UI/UX", imgSrc: UIUX, description: "In 2023, I completed the Introduction to UI/ UX certification at RE: Coded.This achievement signifies my dedication to mastering the principles of user interface(UI) and user experience(UX) design.It reflects my commitment to delivering exceptional digital experiences tailored to user needs\u2764"
+            title: "Introduction To UI/UX", imgSrc: UIUX, description: "In 2023, I completed the Introduction to UI/ UX certification at RE: Coded.This achievement signifies my dedication to mastering the principles of user interface(UI) and user experience(UX) design.It reflects my commitment to delivering exceptional digital experiences tailored to user needs"
         },
     ];
 
@@ -38,7 +38,7 @@ function Certificate() {
 
                 <div className="d-flex flex-column">
                     <span className="animation-aboutme">My Certificate</span>
-                    <div className="animation-certificate">{`\u2764`}For more details you can click on the card.{`\u2764`}Inside, you will find a view button and download option for further exploration{`\u2764`}</div>
+                    <div className="animation-certificate">For more details you can click on the card. Inside, you will find a view button and download option for further exploration</div>
                 </div>
                 <div className="container-card">
                     <Row className="certificate-container">
