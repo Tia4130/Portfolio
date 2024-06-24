@@ -59,7 +59,7 @@
 }
 #light .input-groups {
     align-items: center;
-    width: 80%;
+    /* width: 80%; */
     border: 1px solid rgb(255, 255, 255, 0.7);
     background-color: #5d7ba4;
     padding: 10px;
@@ -188,7 +188,7 @@
 
 #light .card-contact-right {
     border-radius: 20px;
-    width: 90%;
+    /* width: 90%; */
     padding: 10px 10px;
     content: '';
     background: linear-gradient(to right, #163369, #5d7ba4, #a1a1a4, #e2a4b1, #b3cee2);
